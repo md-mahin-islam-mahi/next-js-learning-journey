@@ -1,6 +1,6 @@
 import './globals.css'
-import Header from '@/Components/Header/Header'
-import Footer from '@/Components/Footer/Footer'
+import Header from '../Components/Header/Header'
+import Footer from '../Components/Footer/Footer'
 
 
 export const metadata = {
@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="max-w-screen-2xl mx-auto px-3 bg-slate-50">
+      <body className="max-w-screen-2xl mx-auto bg-slate-50">
         <Header />
         {children}
         <Footer />
