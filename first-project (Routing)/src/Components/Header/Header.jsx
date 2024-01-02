@@ -3,13 +3,17 @@ import Link from 'next/link';
 
 const Header = () => {
 
+    const navLinks = <>
+        <Link className='uppercase mx-2 text-[10px] font-semibold' href="/">Home</Link>
+        <Link className='uppercase mx-2 text-[10px] font-semibold' href="/about">About Us</Link>
+        <Link className='uppercase mx-2 text-[10px] font-semibold' href="/projects">Our Projects</Link>
+        <Link className='uppercase mx-2 text-[10px] font-semibold' href="/goals">Our Goals</Link>
+    </>
+
     return (
-        <nav className='fixed w-full shadow-xl'>
+        <nav className='fixed w-full shadow-sm'>
             <div className='flex justify-center items-center py-3'>
-                <Link className='uppercase mx-2 text-2xl font-semibold' href="/">Home</Link>
-                <Link className='uppercase mx-2 text-2xl font-semibold' href="/about">About Us</Link>
-                <Link className='uppercase mx-2 text-2xl font-semibold' href="/projects">Our Projects</Link>
-                <Link className='uppercase mx-2 text-2xl font-semibold' href="/goals">Our Goals</Link>
+                {navLinks}
             </div>
         </nav>
     );
